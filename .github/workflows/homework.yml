@@ -3,10 +3,10 @@ name: Homework CI — Лекция 1
 on:
   push:
     paths:
-      - "lectures/01_lecture/homework/**"
+      - "network_python/lectures/01_lecture/homework/**"
   pull_request:
     paths:
-      - "lectures/01_lecture/homework/**"
+      - "network_python/lectures/01_lecture/homework/**"
 
 # Отменяем предыдущий запуск, если был новый push
 concurrency:
