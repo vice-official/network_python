@@ -22,6 +22,10 @@ Asyncio позволяет держать тысячи соединений в �
 """
 
 import asyncio
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
+import math
+import time
 
 # ═══════════════════════════════════════════════════════════
 # ЗАДАНИЕ 4.1 — Первая корутина

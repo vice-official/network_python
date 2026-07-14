@@ -72,7 +72,7 @@ def fetch_all_with_errors(urls: list[str], max_workers: int = 4) -> list[str | N
                 results.append(f.result())
             except Exception:
                 results.append(None)
-        return resultsr
+        return results
 
 
 # ═══════════════════════════════════════════════════════════

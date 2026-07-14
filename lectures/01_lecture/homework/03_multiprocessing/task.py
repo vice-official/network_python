@@ -17,7 +17,8 @@ multiprocessing.Pool.
 # ═══════════════════════════════════════════════════════════
 # ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ — не меняйте их
 # ═══════════════════════════════════════════════════════════
-
+from multiprocessing import Pool
+from concurrent.futures import ThreadPoolExecutor
 
 def is_prime(n: int) -> bool:
     """Проверка числа на простоту (CPU-bound)."""
@@ -67,7 +68,7 @@ def compute_parallel_pool(numbers: list[int], processes: int = 4) -> list[int]:
     """
     # TODO: реализуйте
     with Pool(processes) as p:
-        return p.map(heavy_compute, numbers)r
+        return p.map(heavy_compute, numbers)
 
 
 # ═══════════════════════════════════════════════════════════
